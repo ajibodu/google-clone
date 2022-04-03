@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: arial, sans-serif;
+  font-size: 14px;
 }
 .container {
   display: flex;
@@ -93,7 +94,7 @@ body {
 }
 .info {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   padding: 0 20px;
   height: 40px;
   align-items: center;
@@ -103,11 +104,41 @@ body {
 .info a {
   color: #70757a;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 .info a:hover {
   text-decoration: underline;
 }
 .info .left a:nth-child(1) {
   padding-left: 0;
+}
+.info .left,
+.info .right {
+  width: 30%;
+}
+.info .ceneter {
+  width: 40%;
+  text-align: center;
+}
+.info .right {
+  text-align: end;
+}
+
+@media screen and (max-width: 600px) {
+  .search {
+    width: 90%;
+  }
+  .info {
+    flex-direction: column;
+    height: auto;
+  }
+  .info div {
+    width: 100% !important;
+    height: 40px !important;
+    text-align: center !important;
+    line-height: 40px;
+  }
+  .ceneter {
+    order: -1;
+  }
 }
