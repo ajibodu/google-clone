@@ -1,4 +1,4 @@
 # google-clone
 #TechKickStart google-clone lecture
 
-##This is a simple class project for the student in my #TechKickStart session
+### This is a simple class project for students in my #TechKickStart session
